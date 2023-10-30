@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 /**
  *check_cycle - function that checks if linked list has
  *has cycle in it
@@ -15,6 +15,7 @@ if(slow && fast && fast->next)
 {
 slow = slow->next;
 fast = fast->next->next;
+if (slow == fast)
 return (1);
 }
 return(0);
