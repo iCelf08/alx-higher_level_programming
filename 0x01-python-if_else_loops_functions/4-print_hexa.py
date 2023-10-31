@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 for i in range(99):
-  hexai = hex(i)
-  print(f"{i} = {hexai}")
-  
+  print("{0} = {1}".format(i, hex(i)))
