@@ -1,17 +1,20 @@
 #!/usr/bin/python3
-""" square module """
-class square:
-    """ defines square """
+"""Square module"""
+
+class Square:
+    """Defines square"""
+
     def __init__(self, size=0):
-        """ initialises
+        """ initialise.
+
             Args :
                 size : size of square
             Raises :
-         TypeError : if size is not an integer
-         ValueError : if size less than 0
-                """ 
+               TypeError : if size is not an integer
+               ValueError : if size less than 0
+        """ 
         
-        if not isinstace(size, int):
+        if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0:
             raise ValueError('size must be >= 0')
