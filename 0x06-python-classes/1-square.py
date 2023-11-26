@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Square module"""
+"""Square module."""
 
 class Square:
-    """Define square"""
+    """Define square."""
 
-    def __init__ (self, size):
+    def __init__(self, size):
     """initialiser
     
 Args:
