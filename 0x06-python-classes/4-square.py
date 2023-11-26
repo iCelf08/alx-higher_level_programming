@@ -10,13 +10,14 @@ class Square:
                 size : size of square
            
        """
+        self.size = size
    @property
    def size(self):
        """ property for size in square 
-     Raises :
+           Raises :
               TypeError : if size is not an integer
               ValueError : if size less than 0
-        """
+       """
         return self.__size
 
    @size.setter
