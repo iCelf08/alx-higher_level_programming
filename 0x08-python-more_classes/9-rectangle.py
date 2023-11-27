@@ -24,8 +24,8 @@ class Rectangle:
         return rect_2
 
     @classmethod
-    """clss method returns new triangle with width == height == size"""
     def square(cls, size=0):
+    """clss method returns new triangle with width == height == size"""
         return cls(size, size)
 
     @property
