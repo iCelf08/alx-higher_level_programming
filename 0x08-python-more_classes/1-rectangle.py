@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 """Rectangle module"""
 
 class Rectangle:
@@ -12,7 +12,6 @@ class Rectangle:
         self.__width = width
         self.__height = height
         
-    
     @property
     def width(self):
         """Property getter"""
