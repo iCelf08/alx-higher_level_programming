@@ -3,7 +3,6 @@
 
 class Rectangle:
     """Defines Rectangle"""
-
     def __init__(self, width=0, height=0):
         """Construct:
         Arg:
@@ -34,16 +33,11 @@ class Rectangle:
 
 
     @property
-    """property instance hieght
-    Return:
-         value of height
-    """
     def height(self):
         """Property getter for height"""
         return self.__height
 
     @height.setter:
-
     def height(self, value):
         """Property setter for height"""
         if not isinstance(value, int):
