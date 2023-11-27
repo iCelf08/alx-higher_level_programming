@@ -14,10 +14,6 @@ class Rectangle:
         
     
     @property
-    """property instance width
-    Return:
-         value of width
-    """
     def width(self):
         """Property getter"""
         return self.__width
@@ -25,13 +21,12 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Property setter"""
-        if not isinstance(value, int):
-            raise TypeError('width must be integer')
+        if type(value) is not int:
+            raise TypeError("width must be integer")
         if value < 0:
-            raise ValueError('width must be >= 0')
+            raise ValueError("width must be >= 0")
         self.__width = value
-
-
+        
     @property
     def height(self):
         """Property getter for height"""
@@ -40,7 +35,7 @@ class Rectangle:
     @height.setter:
     def height(self, value):
         """Property setter for height"""
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError('height must be integer')
         if value < 0:
             raise ValueError('height must be >= 0')
