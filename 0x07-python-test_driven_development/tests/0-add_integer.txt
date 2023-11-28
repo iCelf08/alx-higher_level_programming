@@ -20,7 +20,7 @@ test one float:
 
 test two integers:
 
-   >>> add_integers(10,5)
+   >>> add_integer(10, 5)
    15
 
 test two big integers:
@@ -35,12 +35,12 @@ Test positive, negative integers:
 
 Test negative, positive integers:
 
-   >>> add_integers(-10, 11)
+   >>> add_integer(-10, 11)
    1
 
 Test an integer and a float:
 
-   >>> add_integers(123, 3.99)
+   >>> add_integer(123, 3.99)
    126
 
 Test a float and an integer:
@@ -99,4 +99,4 @@ Test float overflow:
     >>> add_integer(float('inf'), 0)
     Traceback (most recent call last):
     ...
-    OverflowError: cannot convert float infinity to 
+    OverflowError: cannot convert float infinity to integer
