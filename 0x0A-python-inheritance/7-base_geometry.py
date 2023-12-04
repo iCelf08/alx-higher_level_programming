@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-""" module for BaseGeometry """
+""" module for 7 BaseGeometry """
 
 class BaseGeometry:
     """ BaseGeometry class """
     def area(self):
         """ method to get area"""
         raise Exception("area() is not implemented")
+
     def integer_validator(self, name, value):
         """ methode that validates value """
         
