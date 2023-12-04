@@ -3,7 +3,7 @@
 
 def is_same_clase(obj, a_class):
 
-    """  function that check is exactly an instance \
+    """  function that check is exactly an instance
          of the specified class
       Returns: true for yes otherwise false
     """
