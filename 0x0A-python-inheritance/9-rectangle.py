@@ -16,7 +16,7 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """method for counting area"""
-         return self.width * self.height
+         return self.__width * self.__height
 
     def __str__(self):
         return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
