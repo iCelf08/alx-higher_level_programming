@@ -1,17 +1,20 @@
-#!/Usr/bin/python3
+#!/usr/bin/python3
 """Module prints first and last name"""
 
 def say_my_name(first_name, last_name=""):
     """function prints first and last name
-    
+
     Args:
-         first_name: as it says
-         last_name: as it says
-   
+        first_name: as it says
+        last_name: as it says
+
     Raise:
-         TypepeError : if one or both arguments arent string
+        TypeError: if one or both arguments aren't strings
 
     """
+    if not first_name:
+        raise TypeError("say_my_name() missing 1 required positional argument: 'first_name'")
+
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
 
@@ -19,7 +22,3 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("last_name must be a string")
 
     print("My name is {:s} {:s}".format(first_name, last_name))
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("tests/3-say_my_name.txt")
