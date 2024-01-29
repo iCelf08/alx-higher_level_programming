@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/Usr/bin/python3
 """Module prints first and last name"""
 
 def say_my_name(first_name, last_name=""):
