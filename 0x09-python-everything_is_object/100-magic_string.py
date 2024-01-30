@@ -2,3 +2,5 @@
 def magic_string():
     count += 1
     return ", ".join(["BestSchool"] * count)
+
+count = 0
