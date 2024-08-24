@@ -1,3 +1,3 @@
 #!/bin/bash
-# Sends a request to a URL and displays only the status code
-curl -s -o /dev/null -w "%{http_code}" "$1"
+#size of content-length
+curl -s -X POST -H "Content-Type: application/json" -d "@$2" "$1"
